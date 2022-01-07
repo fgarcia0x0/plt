@@ -67,6 +67,7 @@ int main(int argc, char** argv)
         if (!pll::grammar::recognize(stream_grammar))
         {
             std::cout << "[-] invalid proposition\n";
+            exit(EXIT_FAILURE);
         }
     }
     catch(const std::exception& e)
